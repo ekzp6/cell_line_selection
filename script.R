@@ -4,9 +4,9 @@ library(GSEABase)
 library(tidyverse)
 
 # reading in counts and gene list
-setwd('~/cilia-RNAseq/workspace')
+setwd("~/glab/cell_line_selection")
 gene_list <- read_delim('gene_list.txt',delim ='\t')
-counts <- read_table2('CCLE_RNAseq_rsem_genes_tpm_20180929.txt')
+counts <- read_table2('CCLE_RNAseq_rsem_genes_tpm_20180929.zip')
 
 ################################################################################
 # ----------- adding in ENS identifiers to gene list ---------------------------
